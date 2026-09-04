@@ -76,10 +76,3 @@ The custom Tableau dashboard sheets reveal clear strategic trends across all tie
   Store algorithms favor recent changes, while properties slipping beyond 12 months sit dead in search indices. Implement systematic feature cycles every 30 to 90 days to retain organic performance.
 * **Target Highly Rated Verticals:** 
   Focus engineering targets toward **Education** or **Video Players** genres; these paths show historically higher consumer acceptance values.
-
-***
-
-If you would like to enhance this documentation or expand the repository, let me know if you need help with:
-* Creating a dynamic **Python implementation script** for automated dataset cleaning before ingestion.
-* Drafting an executive **Presentation Deck Outline** tailored for reporting these findings to leadership.
-* Developing a **Markdown template** for a deep-dive comprehensive report of the data outcomes.
