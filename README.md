@@ -1,20 +1,20 @@
 # App Insights Unlocked: Google Play Store Data Analytics Challenge
 
-## 📌 Project Overview
+##  Project Overview
 This project presents a comprehensive data analytics case study on **Google Play Store applications** executed within **Tableau**. The core mission is to empower internal product managers, developers, and marketing teams to discover trends, uncover hidden market dynamics, and establish actionable benchmarks. 
 
 By running data operations across a rich corpus of app names, category genres, ratings, installation footprints, download file sizes, and user review counts, this project bridges raw metadata into highly scannable visual indicators that optimize app engineering and deployment models.
 
 ---
 
-## 💻 Requirements, Tools, and Technologies
+##  Requirements, Tools, and Technologies
 * **Analytical Architecture:** Tableau Desktop (Workbook version 2026.2 / Hyper Extract engine)
 * **Data Processing & Schema Management:** Tableau Calculated Fields (Regular Expressions, Type Casting, String Normalization, and Datetime Arithmetic)
 * **Underlying Source Files:** `googleplaystore.csv` (App parameters catalog) joined via full relational schema mapping to `googleplaystore_user_reviews.csv` (Customer textual semantic feedback metrics)
 
 ---
 
-## 🛠️ Data Preprocessing & Schema Engineering
+##  Data Preprocessing & Schema Engineering
 Before initiating any front-end visualization, the raw string attributes were normalized into math-ready variables using optimized Tableau Calculated Fields:
 
 1. **`[Cleaned Rating]`**: Filters garbage metrics and structural errors, setting an absolute 5-star constraint boundary.
@@ -38,7 +38,7 @@ Before initiating any front-end visualization, the raw string attributes were no
 
 ---
 
-## 📊 Core Analytical Insights Uncovered
+##  Core Analytical Insights Uncovered
 The custom Tableau dashboard sheets reveal clear strategic trends across all tiers of inquiry:
 
 ### 1. Basic-Level Findings
@@ -58,7 +58,7 @@ The custom Tableau dashboard sheets reveal clear strategic trends across all tie
 
 ---
 
-## ⚠️ Challenges Faced and Mitigation Strategies
+##  Challenges Faced and Mitigation Strategies
 * **Anomalous Values:** The entry tables contained random data injection anomalies where the `Rating` field was populated with corrupted inputs above the 5.0 scale boundary.
   * *Mitigation:* Eliminated using strict boundary rules inside the field extract model (`IF FLOAT([Rating]) > 5 THEN NULL`).
 * **Alphanumeric Artifacts:** Columns such as `Installs` contained characters ("Varies with device", "+") that blocked regular math aggregations.
@@ -66,7 +66,7 @@ The custom Tableau dashboard sheets reveal clear strategic trends across all tie
 
 ---
 
-## 💡 Strategic Recommendations for Improvements
+##  Strategic Recommendations for Improvements
 
 * **Optimize Storage Footprints Globally:** 
   If engineering application pipelines within **Family or Game** environments, maintain high resolution asset designs; consumer download trends indicate zero resistance to large space footprints here. However, when introducing utilities into **Tools or Productivity**, minimize space constraints to encourage rapid installs.
